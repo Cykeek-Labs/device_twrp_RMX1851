@@ -27,14 +27,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device specific configs
 $(call inherit-product, device/realme/RMX1851/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
-PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := omni_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := Realme
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_MODEL := $(PRODUCT_RELEASE_NAME)
